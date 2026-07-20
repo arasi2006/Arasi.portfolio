@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>V. Mutharasi — Computer Science Student &amp; UI/UX Designer</title>
+<meta name="description" content="Portfolio of V. Mutharasi, Final Year CSE student, UI/UX Designer and Frontend Developer." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ================= Cursor glow (decorative) ================= -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ================= Preloader ================= -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-mark">
+    <span>&lt;</span><span class="preloader-name">VM</span><span>/&gt;</span>
+  </div>
+</div>
+
+<!-- ================= Navbar ================= -->
+<header class="navbar" id="navbar">
+  <nav class="nav-container">
+    <a href="#home" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>V.Mutharasi<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#internship" class="nav-link">Internship</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+        <i class="fa-solid fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ================= Hero Section ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg-grid" aria-hidden="true"></div>
+  <div class="hero-orb orb-blue" aria-hidden="true"></div>
+  <div class="hero-orb orb-green" aria-hidden="true"></div>
+
+  <div class="hero-container">
+    <div class="hero-text" data-reveal>
+      <p class="hero-eyebrow"><span class="pulse-dot"></span> Final Year CSE Student · Open to Opportunities</p>
+
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">V. Mutharasi</span>
+      </h1>
+
+      <div class="hero-typewriter">
+        <span class="type-prompt">$</span>
+        <span class="type-target" id="typeTarget"></span><span class="type-cursor">|</span>
+      </div>
+
+      <p class="hero-desc">
+        Final Year Computer Science &amp; Engineering student crafting clean interfaces
+        and functional front-ends — blending design sense with code.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#" class="btn btn-primary" id="resumeBtn" download>
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fa-regular fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/arasi2006/Mutharasi.git" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/muthu-arasi-629561339" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:mutharasikpr2006@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap" data-reveal>
+      <div class="hero-photo-frame">
+        <div class="frame-topbar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="frame-label">profile.jsx</span>
+        </div>
+        <div class="frame-photo">
+          <img src="assets/profile.jpg" alt="Portrait of V. Mutharasi" id="heroPhoto" onerror="this.parentElement.classList.add('img-fallback')" />
+          <div class="fallback-avatar" aria-hidden="true">VM</div>
+        </div>
+      </div>
+      <div class="floating-badge badge-1"><i class="fa-solid fa-code"></i> Frontend Dev</div>
+      <div class="floating-badge badge-2"><i class="fa-solid fa-pen-ruler"></i> UI/UX Design</div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+    <span>Scroll</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- ================= About Section ================= -->
+<section class="section" id="about">
+  <div class="section-container">
+    <div class="section-heading" data-reveal>
+      <p class="eyebrow">01 · Get to know me</p>
+      <h2>About Me</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="glass-card about-card" data-reveal>
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <p>
+          I'm a passionate Computer Science student with a strong interest in
+          <strong> UI/UX Design</strong> and <strong>Frontend Development</strong>. I enjoy
+          creating responsive, user-friendly web applications that feel as good to use
+          as they look.
+        </p>
+        <p>
+          I'm a quick learner with strong problem-solving and communication skills — always
+          curious about how design and code come together to solve real problems.
+        </p>
+      </div>
+
+      <div class="glass-card objective-card" data-reveal>
+        <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>Career Objective</h3>
+        <p>
+          Seeking opportunities to apply technical knowledge, creativity, and problem-solving
+          skills to develop innovative software solutions while continuously learning new
+          technologies.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-stats" data-reveal>
+      <div class="stat-item">
+        <span class="stat-number" data-count="2027">0</span>
+        <span class="stat-label">Expected Graduation</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="3">0</span>
+        <span class="stat-label">Featured Projects</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="2">0</span>
+        <span class="stat-label">Internships</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="6">0</span>
+        <span class="stat-label">Core Soft Skills</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Education Section ================= -->
+<section class="section section-alt" id="education">
+  <div class="section-container">
+    <div class="section-heading" data-reveal>
+      <p class="eyebrow">02 · Academic Journey</p>
+      <h2>Education</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="glass-card timeline-card">
+          <span class="timeline-year">2023 — 2027</span>
+          <h3>B.E. Computer Science &amp; Engineering</h3>
+          <p class="timeline-place"><i class="fa-solid fa-graduation-cap"></i> Sardar Raja College of Engineering</p>
+          <p class="timeline-desc">Expected Graduation: 2027 — building a strong foundation in software
+            development, data structures, and design-driven engineering.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="glass-card timeline-card">
+          <span class="timeline-year">HSC &amp; SSLC</span>
+          <h3>Higher &amp; Secondary Education</h3>
+          <p class="timeline-place"><i class="fa-solid fa-school"></i> Aavaiyar Government Girls Higher Secondary School</p>
+          <p class="timeline-desc">Built the academic groundwork in mathematics and science that led
+            into a Computer Science degree.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Skills Section ================= -->
+<section class="section" id="skills">
+  <div class="section-container">
+    <div class="section-heading" data-reveal>
+      <p class="eyebrow">03 · What I work with</p>
+      <h2>Skills &amp; Tools</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="glass-card skills-card" data-reveal>
+        <h3><i class="fa-solid fa-code"></i> Technical Skills</h3>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>HTML5</span><span>95%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>CSS3</span><span>90%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>JavaScript</span><span>80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>UI/UX Design</span><span>88%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-label"><span>Responsive Web Design</span><span>92%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+        </div>
+      </div>
+
+      <div class="skills-side">
+        <div class="glass-card tools-card" data-reveal>
+          <h3><i class="fa-solid fa-toolbox"></i> Tools</h3>
+          <div class="tag-cloud">
+            <span class="tag"><i class="fa-brands fa-figma"></i> Figma</span>
+            <span class="tag"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="tag"><i class="fa-solid fa-code"></i> VS Code</span>
+            <span class="tag"><i class="fa-solid fa-file-lines"></i> MS Office</span>
+            <span class="tag"><i class="fa-solid fa-palette"></i> Canva</span>
+          </div>
+        </div>
+
+        <div class="glass-card tools-card" data-reveal>
+          <h3><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+          <div class="tag-cloud">
+            <span class="tag tag-green">Quick Learner</span>
+            <span class="tag tag-green">Problem Solving</span>
+            <span class="tag tag-green">Easy Understanding</span>
+            <span class="tag tag-green">Communication</span>
+            <span class="tag tag-green">Teamwork</span>
+            <span class="tag tag-green">Creativity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Internship Section ================= -->
+<section class="section section-alt" id="internship">
+  <div class="section-container">
+    <div class="section-heading" data-reveal>
+      <p class="eyebrow">04 · Hands-on Experience</p>
+      <h2>Internships</h2>
+    </div>
+
+    <div class="internship-grid">
+      <div class="glass-card internship-card" data-reveal>
+        <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <h3>Frontend Development Internship</h3>
+        <p>Worked on building responsive, user-friendly web interfaces — translating designs
+          into clean, functional front-end code.</p>
+      </div>
+
+      <div class="glass-card internship-card" data-reveal>
+        <div class="card-icon"><i class="fa-solid fa-pen-nib"></i></div>
+        <h3>UI/UX Design Internship</h3>
+        <p>Focused on user-centered design, wireframing, and prototyping to craft intuitive
+          and visually engaging digital experiences.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Projects Section ================= -->
+<section class="section" id="projects">
+  <div class="section-container">
+    <div class="section-heading" data-reveal>
+      <p class="eyebrow">05 · Selected Work</p>
+      <h2>Featured Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+      <div class="glass-card project-card" data-reveal>
+        <div class="project-top">
+          <span class="project-tag">UI / UX Design</span>
+          <i class="fa-solid fa-leaf project-icon"></i>
+        </div>
+        <h3>Vedacraft Mobile Application</h3>
+        <p>A UI/UX case study designing an intuitive, visually rich mobile app experience —
+          from wireframes to a polished interactive prototype.</p>
+        <div class="project-stack">
+          <span>Figma</span><span>UI/UX</span><span>Prototyping</span>
+        </div>
+      </div>
+
+      <div class="glass-card project-card" data-reveal>
+        <div class="project-top">
+          <span class="project-tag">AI / ML</span>
+          <i class="fa-solid fa-pills project-icon"></i>
+        </div>
+        <h3>DrugNN Project</h3>
+        <p>An AI-based system for drug recommendation and side-effect prediction, aimed at
+          supporting safer, smarter medical decision-making.</p>
+        <div class="project-stack">
+          <span>AI/ML</span><span>Python</span><span>Healthcare</span>
+        </div>
+      </div>
+
+      <div class="glass-card project-card" data-reveal>
+        <div class="project-top">
+          <span class="project-tag">Web Development</span>
+          <i class="fa-solid fa-globe project-icon"></i>
+        </div>
+        <h3>Personal Portfolio Website</h3>
+        <p>A fully responsive personal portfolio built to showcase skills, projects, and
+          experience with a premium, modern design.</p>
+        <div class="project-stack">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Contact Section ================= -->
+<section class="section section-alt" id="contact">
+  <div class="section-container">
+    <div class="section-heading" data-reveal>
+      <p class="eyebrow">06 · Let's connect</p>
+      <h2>Contact Me</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="glass-card contact-info-card" data-reveal>
+        <h3>Say hello</h3>
+        <p class="contact-lead">
+          Open to internship and placement opportunities — feel free to reach out for
+          collaborations or just to say hi.
+        </p>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <span class="contact-label">Email</span>
+            <a href="mailto:mutharasikpr2006@gmail.com">mutharasikpr2006@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/muthu-arasi-629561339" target="_blank" rel="noopener">/muthu-arasi-629561339</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <div>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/arasi2006/Mutharasi.git" target="_blank" rel="noopener">/arasi2006/Mutharasi</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="glass-card contact-form" id="contactForm" data-reveal>
+        <h3>Send a message</h3>
+
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about the opportunity or say hello..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit">
+          <i class="fa-regular fa-paper-plane"></i> Send Message
+        </button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Footer ================= -->
+<footer class="footer">
+  <div class="footer-container">
+    <a href="#home" class="nav-logo footer-logo">
+      <span class="logo-bracket">&lt;</span>V.Mutharasi<span class="logo-bracket">/&gt;</span>
+    </a>
+    <p class="footer-tagline">Computer Science Student · UI/UX Designer · Frontend Developer</p>
+
+    <div class="footer-socials">
+      <a href="https://github.com/arasi2006/Mutharasi.git" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/muthu-arasi-629561339" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:mutharasikpr2006@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+    <p class="footer-copy">&copy; <span id="year"></span> V. Mutharasi. Crafted with care and code.</p>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
